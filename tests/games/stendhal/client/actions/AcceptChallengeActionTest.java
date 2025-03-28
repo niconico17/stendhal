@@ -40,7 +40,7 @@ public class AcceptChallengeActionTest {
 		new MockStendhalClient() {
 			@Override
 			public void send(final RPAction action) {
-				assertEquals(action.get("type"), "challenge");
+				assertEquals(action.get("type"), "challenge1");
 				assertEquals(action.get("action"), "accept");
 			}
 		};
